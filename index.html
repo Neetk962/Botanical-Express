@@ -4,68 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botanical Express</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules/bulma/bulma.sass">
     
-</head>
-<body>
-    <header class="header">
-        <h1>Botanical Express</h1>
-        <!-- added nav bar -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#plantcare">Plant Care</a>
+    <!--header added-->
+
+<header class="text-center font-bold text-3xl text-green-900 p-4 ">
+    Botanical Express
+</header>
+
+        
+       
+
+            <div class="container min-h-screen bg-[url('images/picbac.jpg')] bg-center bg-cover ">
+
+                <!--added navigation bar-->
+        <nav class="flex items-center">
+
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5">
+                    <a href="#plantcare" class="no-underline text-green-900 px-2">Plant Care</a>
                 </li>
-                <li>
-                    <a href="#spotlight">Spotlight Plants</a>
+                <li class="list-none inline-block px-5">
+                    <a href="#spotlight" class="no-underline text-green-900 px-2">Spotlight Plants</a>
                 </li>
-                <li>
-                    <a href="#plant-talk">Plant Talk</a>
+                <li  class="list-none inline-block px-5">
+                    <a href="#plant-talk" class="no-underline text-green-900 px-2">Plant Talk</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li  class="list-none inline-block px-5">
+                    <a href="#articles" class="no-underline text-green-900 px-2">Articles</a>
+                </li>
+
+                <li class="list-none inline-block px-5">
+                    <a href="#login" class="no-underline text-green-900 px-2">Login                          </a>
+                
                 </li>
                 
             </ul>
         </nav>
-    </header>
+
+ 
 <!-- main section -->
 
-    <main class="hero"></main>
-    <div class="content">
-        <article id="plantcare">
-            <img src="./images/plantcare.jpg" alt="plantcare" class="float-left" />
-            <h2>Plant Care</h2>
+    <main>
+    
+        <article class="text-green-950 mt-48 max-w-lg">
+            <!--img added -->
+            <img src="./images/plantcare.jpg" alt="plantcare"  class="float-left"/>
+            <h2 class="text-6xl font-semibold leading-normal">Plant Care</h2>
             <p>
                 Plant care infor 
             </p>
         </article>
-        <article id="spotlight">
-            <img src="./" alt="Spotlight Plants" class="float-right" />
-            <h2>Spotlight Plants </h2>
+        <article class="text-green-950 mt-48 max-w-lg">
+      <!--img added -->
+            <img src="./images/jerry.jpg"class="w-full "   alt="jerry" >
+            <h2 class="text-6xl font-semibold leading-normal">Spotlight Plants </h2>
+        
             <p>
-                pictures of spotlight plants and infor
+                Jerry's Plant 
             </p>
         </article>
-        <article id="plant-talk" >
-            <img src="./" alt=" Plant Talk" class="float-left" />
-            <h2>Plant Talk </h2>
+        <article class="text-green-950 mt-48 max-w-lg">
+              <!--img added -->
+            <img src="./" alt=" Plant Talk">
+            <h2 class="text-6xl font-semibold leading-normal">Plant Talk </h2>
             <p>
-                plant talk 
+                Topic of Discussion ---Plants Bring You Life
             </p>
         </article>
 
 
-        <article id="contact" >
-            <img src="./" alt=" Contact" class="float-left" />
-            <h2>Contact </h2>
+        <article class="text-green-950 mt-48 max-w-lg" >
+              <!--img added -->
+            <img src="./" alt=" Articles" />
+            <h2 class="text-6xl font-semibold leading-normal"> Latest Articles </h2>
             <p>
-                contact info
+            Articles 
             </p>
         </article>
+
+        <article class="text-green-950 mt-48 max-w-lg" >
+            <!--img added -->
+          <h2 class="text-6xl font-semibold leading-normal">Login </h2>
+      <a href="signup-login.html" class="bg-yellow-500 rounded py-3 px-8 font-medium inline-block hover:bg-transparent hover:border-yellow-500 hover:text-green-900 duration-300 hover:border"> Login/SignUp</a>
+      </article>
     </div>
 
+</main>
 
 
 
@@ -87,6 +114,6 @@
 
 
 
-
+<script src="./script.js"></script>
 </body>
 </html>

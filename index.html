@@ -7,7 +7,9 @@
    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    </head>
     
+    <body class="bg-[url('/images/picbac.jpg')]">
     <!--header added-->
 
 <header class="text-center font-bold text-3xl text-green-900 p-4 ">
@@ -17,27 +19,27 @@
         
        
 
-            <div class="container min-h-screen bg-[url('images/picbac.jpg')] bg-center bg-cover ">
+            <div class="container min-h-screen">
 
                 <!--added navigation bar-->
-        <nav class="flex items-center">
+        <nav class="flex justify-center">
 
             <ul class="flex-1 text-center">
                 <li class="list-none inline-block px-5">
-                    <a href="#plantcare" class="no-underline text-green-900 px-2">Plant Care</a>
+                    <a href="#plantcare" class="no-underline text-amber-950 px-2 font-bold"> Plant Care</a>
                 </li>
                 <li class="list-none inline-block px-5">
-                    <a href="#spotlight" class="no-underline text-green-900 px-2">Spotlight Plants</a>
+                    <a href="#spotlight" class="no-underline text-amber-950 px-2 font-bold">Spotlight Plants</a>
                 </li>
                 <li  class="list-none inline-block px-5">
-                    <a href="#plant-talk" class="no-underline text-green-900 px-2">Plant Talk</a>
+                    <a href="#plant-talk" class="no-underline text-amber-950 px-2 font-bold">Plant Talk</a>
                 </li>
                 <li  class="list-none inline-block px-5">
-                    <a href="#articles" class="no-underline text-green-900 px-2">Articles</a>
+                    <a href="#articles" class="no-underline text-amber-950 px-2 font-bold">Articles</a>
                 </li>
 
-                <li class="list-none inline-block px-5">
-                    <a href="#login" class="no-underline text-green-900 px-2">Login                          </a>
+                <li>
+                  <a href="signup-login.html" class="bg-yellow-500 rounded list-none inline-block px-5 hover:bg-transparent hover:border-yellow-500 hover:text-green-900 duration-300 hover:border"> Sign Up</a>
                 
                 </li>
                 
@@ -47,15 +49,19 @@
  
 <!-- main section -->
 
-    <main>
+    <main class=" flex flex-col justify-center text-center">
         <p class="text-4xl font-semibold leading-normal text-green-950">
             Your Journey to Plant Parenthood!
         </p>
+     
+
         <p2 class="text-2xl font-semibold leading-normal text-amber-950">
             Empowering all people to be plant people—a collection of articles from a team of plant experts across a variety of plant care topics to inspire confidence in the next generation of plant parents.
         </p2>
+
+        
     
-        <article  class="text-green-950 mt-48 max-w-lg ">
+        <article  class="text-green-950 flex flex-col justify-center text-center">
             <!--img added -->
             
             <img  class="plantcare" src="./images/plantcare.jpg"   alt="plantcare" />
@@ -63,29 +69,36 @@
             <p class="text-4xl font-semibold leading-normal">
                 Common Houseplant Care Questions
             </p>
+            <br>
 
 
-            
-            <p2 class="text-2xl font-semibold leading-normal mr-4 p-4">
+
+            <p2 class="text-2xl font-semibold leading-normal ">
                 Signs of Overwatering Your Plants?
 
             </p2>
+            <br>
 
 
 
 
 
-            <p3 class="text-1xl font-semibold leading-normal m-4 p-8">
+            <p3 class="text-1xl font-semibold leading-normal ">
 
                 How do I know if I am overwatering my houseplants?
+                <br>
+
 Overwatering is a relatively easy mistake to diagnose, and many symptoms of overwatering are unique to it. When diagnosing a sad plant sign, it is important to look at the plant as a whole, and not just the plant part that's negatively affected. Although we think of overwatering as just adding too much water to a plant's potting mix — what is really going on is that the surrounding soil is not drying out fast enough. It may very well be from too much water (and most commonly is), but it may also be from not enough natural sunlight. If you water a plant with the appropriate amount of water, but it does not get enough sunlight, then the potting mix will stay moist, and the plant will be effectively overwatered. A good strategy for combating that is watering in the morning hours. And, if your home needs a boost of natural sunlight, consider adding a grow light.
+
 
 The first thing you should do, when diagnosing an overwatered plant, is to feel the plant's potting mix! Feel the mix a few inches deep. If it feels moist or wet, it is most likely overwatered. Another sign of overwatering can be fungus gnats. Fungus gnats feed on the fungi that show up in moist environments. They proliferate when the soil stays too wet for too long. But do not fret — you can get rid of them. 
 
 In addition to signs like wet potting mix and fungus gnats, the lower leaves of your overwatered plant will start to turn yellow, and then you may even see blackening at the base of said plant. If you see base mushiness or rot, it may be game over for your plant depending on the variety, so try to catch it early.
 
+
 The best way to keep a plant from being overwatered is to give the plant water only when the potting mix is dry — and to give it enough light and warmth to help dry out efficiently. It is definitely easier to overwater a plant in a non-draining container, so consider repotting to a planter with drainage holes (or add a layer of lava rocks to the bottom of a container within holes).
             </p3>
+            <br>
 
 
 
@@ -101,6 +114,7 @@ The best way to keep a plant from being overwatered is to give the plant water o
             Why some prefer nursery grow pots?
 
            </p4> 
+           <br>
 
 
 
@@ -148,16 +162,16 @@ It is the season: Your plant could use fresh potting mix and more space for the 
         
         </article>
         <aside class="jerry">
-        <article class="text-green-950 mt-48 max-w-lg">
+        <article class="text-green-950 mt-48 ">
       <!--img added -->
-            <img src=images/jerry.jpg class="w-full "   alt="jerry" >
+            <img src=images/jerry.jpg id="jerry"   alt="jerry" >
             <h2 class="text-6xl font-semibold leading-normal">Spotlight Plants </h2>
         
             <p>
                 Jerry's Plant 
             </p>
         </article>
-        <article class="text-green-950 mt-48 max-w-lg">
+        <article class="text-green-950 mt-48 ">
               <!--img added -->
             <img src="./" alt=" Plant Talk">
             <h2 class="text-6xl font-semibold leading-normal">Plant Talk </h2>
@@ -167,7 +181,7 @@ It is the season: Your plant could use fresh potting mix and more space for the 
         </article>
 
 
-        <article class="text-green-950 mt-48 max-w-lg m-4 p-4" >
+        <article class="text-green-950 mt-48  m-4 p-4" >
               <!--img added -->
             <img src="./" alt=" Articles" />
             <h2 class="text-6xl font-semibold leading-normal"> Latest Articles </h2>
@@ -176,7 +190,7 @@ It is the season: Your plant could use fresh potting mix and more space for the 
             </p>
         </article>
 
-        <article class="text-green-950 mt-48 max-w-lg" >
+        <article class="text-green-950 mt-48 " >
             <!--img added -->
           <h2 class="text-6xl font-semibold leading-normal">Login </h2>
       <a href="signup-login.html" class="bg-yellow-500 rounded py-3 px-8 font-medium inline-block hover:bg-transparent hover:border-yellow-500 hover:text-green-900 duration-300 hover:border"> Login/SignUp</a>

@@ -1,14 +1,28 @@
 
-.plantcare img {
+.plantcare {
     height: 400px;
-    width: 600px;
-    display: flex;
+    width: 100%;
     display: inline;
 }
 
-.jerry {
+#jerry {
     height: 400px;
-    width: auto;
+    width: 100%;
+    display:inline;
+}
+
+#form{
+    margin: 30px;
+    padding: 20px;
+    width:fit-content;
+    border: 2px solid;
+    background-color: chartreuse;
+}
+
+.container {
+    margin: 30px;
+    padding: 20px;
+    width:fit-content;
 }
 
 

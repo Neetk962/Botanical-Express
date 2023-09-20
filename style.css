@@ -1,5 +1,15 @@
 
+.plantcare img {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    display: inline;
+}
 
+.jerry {
+    height: 400px;
+    width: auto;
+}
 
 
 

@@ -1,27 +1,29 @@
-function signin(){
-    let oauth2Endpoint="https://accounts.google.com/o/oauth2/v2/auth"
 
-    let form =document.createElement('form')
-    form.setAttribute('method','GET')
-    form.setAttribute('action',oauth2Endpoint)
+gapi.load('auth2',function() {
+    gapi.auth2.init( {
+        client_id:'468175261734-l5d7dpqkluri3lnerdbcr5a22o25og4p.apps.googleusercontent.com'
+    });
+});
 
-    let params= {
-        "client_id":"468175261734-l5d7dpqkluri3lnerdbcr5a22o25og4p.apps.googleusercontent.com",
-        "redirect_uri":"http://127.0.0.1:5504/index.html",
-        "response_type":"token",
-        "scope":"https://www.googleapis.com/auth/userinfo.profile",
-        "include_granted_scopes":"true",
-        'state':'pass-through-value',
-    }
+function onSignIn(googleUser) {
+    const profile= googleUser.getBasicProfile();
+    const userData={
+        id:profile.getId(),
+        name:profile.getName(),
+        email:profile.getEmail(),
+        imageUrl:profile.getImageUrl(),
+    };
 
-    for(var p in params){
-        let input=document.createElement('input')
-        input.setAttribute('type','hidden')
-        input.setAttribute('name', p)
-        input.setAttribute('value', params[p])
-        form.appendChild(input)
-    }
 
-    document.body.appendChild(form)
-    form.submit()
+localStorage.setItem('userData' JSON.stringify(userData));
+
+const userData = JSON.parse(localStorage.getItem('userData'));
+
+if(userData){
+
+}
+
+
+
+
 }

@@ -35,7 +35,7 @@
                     <a href="#plant-talk" class="no-underline text-amber-950 px-2 font-bold">Plant Talk</a>
                 </li>
                 <li  class="list-none inline-block px-5">
-                    <a href="#articles" class="no-underline text-amber-950 px-2 font-bold">Articles</a>
+                    <a href="#identify" class="no-underline text-amber-950 px-2 font-bold">Identify Plants</a>
                 </li>
 
                 <li>
@@ -64,7 +64,7 @@
         <article  class="text-green-950 flex flex-col justify-center text-center">
             <!--img added -->
             
-            <img  class="plantcare" src="./images/plantcare.jpg"   alt="plantcare" />
+            <img  class="plantcare" id="plantcare" src="./images/plantcare.jpg"   alt="plantcare" />
             <h3 class="text-6xl font-semibold leading-normal">Plant Care</h3>
             <p class="text-4xl font-semibold leading-normal">
                 Common Houseplant Care Questions
@@ -164,7 +164,7 @@ It is the season: Your plant could use fresh potting mix and more space for the 
         <aside class="jerry">
         <article class="text-green-950 mt-48 ">
       <!--img added -->
-            <img src=images/jerry.jpg id="jerry"   alt="jerry" >
+            <img src=images/jerry.jpg id="spotlight" class="jerry"   alt="jerry" >
             <h2 class="text-6xl font-semibold leading-normal">Spotlight Plants </h2>
         
             <p>
@@ -192,7 +192,7 @@ Depending on whom you talk to in the plant sciences today, the field of plant ne
         </article>
         <article class="text-green-950 mt-48 ">
               <!--img added -->
-            <img src="images/boq.webp" id="boq" alt=" Plant Talk">
+            <img src="images/boq.webp" id="plant-talk" alt=" Plant Talk">
             <h2 class="text-6xl font-semibold leading-normal">Plant Talk </h2>
             <p>
                 Topic of Discussion ---Can Plants See? In the Wake of a Controversial Study, the Answers Still Unclear
@@ -239,10 +239,18 @@ Lo and behold, he says he observed what appeared to be an attempt by the vine to
 
         <article class="text-green-950 mt-48  m-4 p-4" >
               <!--img added -->
-            <img src="./" alt=" Articles" />
-            <h2 class="text-6xl font-semibold leading-normal"> Latest Articles </h2>
-            <p>
-                Canic leaves, but experts say poor study design and conflicts of interest undermine the report.
+            <img src="images/glass.avif" id="identify" alt=" identify" />
+            <h2 class="text-6xl font-semibold leading-normal"> Identify Plants! </h2>
+            <form>
+                <label for="identifyform">Select image:</label>
+                <input type="file" id="identifyform" name="identifyform" accept="image/*">
+                <button id="submitbutton">
+                    Submit
+                </button>
+              </form>
+              
+            <p class="text-2xl font-semibold">
+                Need help identifying a plant? Find out what your plant is today!
             </p>
         </article>
 

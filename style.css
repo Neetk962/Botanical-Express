@@ -5,7 +5,7 @@
     display: inline;
 }
 
-#jerry {
+.jerry {
     height: 400px;
     width: 100%;
     display:inline;
@@ -17,7 +17,12 @@
 
 }
 
+#identify {
+    height: 400px;
+    width: 100%;
+    display:inline;
 
+}
 
 
 

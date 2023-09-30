@@ -21,7 +21,7 @@ function signup(){
 
 
 
-
+//adding 1st API for plant identification 
 }
 var access="93bccf21e00692f2ca8c6938ae0b90294a8d66851229c143d9526118676a8d76"
 var fileInput= document.getElementById('identifyform')
@@ -47,9 +47,37 @@ var myHeaders = new Headers();
 	  .catch(error => console.log('error', error));
 }
 )
+//adding GIPHY API for animation
+var GIPHY_API_KEY='7hF62x7u8Yt0vktjZWs4vGkvXJsaMCvM';
+var gif_container=document.getElementById('gif-container');
+var GIPHY_BASE_URL=("https://api.giphy.com/v1/gifs/");
 
 
-
-
-
-
+    async function fetchPlantGifs() {
+        try {
+          const response = await fetch(`${GIPHY_BASE_URL}xT9DPhySvCRg3nuTqU?api_key=${GIPHY_API_KEY}`);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          displayGifs(data.data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      }
+      
+      // Function to display GIFs in the container
+      function displayGifs(gifData) {
+        gif_container.innerHTML = ''; // Clear the container
+      
+       
+          const imgElement = document.createElement('img');
+          imgElement.src = gifData.images.original.url;
+          imgElement.alt = gifData.title;
+          imgElement.classList.add('gif-image')
+          gif_container.appendChild(imgElement);
+        
+      }
+      
+      // Call the function to fetch and display plant GIFs
+      fetchPlantGifs();
